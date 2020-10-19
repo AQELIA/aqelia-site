@@ -1,0 +1,209 @@
+body {
+  --color-white: #ffffff;
+  --color-black: #1d1d1b;
+  --color-red: #e20613;
+  --color-yellow: #ffec00;
+  --color-blue: #009ee2;
+
+  font-family: 'Asap', sans-serif;
+  letter-spacing: 0;
+  line-height: 1.15;
+  font-size: 14px;
+}
+
+h2 {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  margin: 0 0 2em 0;
+  padding-top: 1em;
+}
+
+h2::after {
+  position: absolute;
+  right: 0;
+  bottom: -.7em;
+  height: .4em;
+  width: 2em;
+  content: '';
+}
+
+h2.red::after{
+  background-color: var(--color-red);
+}
+h2.yellow::after{
+  background-color: var(--color-yellow);
+}
+h2.blue::after{
+  background-color: var(--color-blue);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.main {
+
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+/* header */
+
+.header-section {
+  background: var(--color-black);
+}
+
+.header-section .container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.header-logo {
+  display: block;
+  width: 25vh;
+  height: auto;
+}
+
+.header-menu {
+  position: absolute;
+  bottom: .5em;
+  right: 0;
+  width: auto;
+  font-size: 1.15em;
+}
+
+.header-menu .pure-menu-link {
+  color: var(--color-white);
+}
+.header-menu .pure-menu-link:hover {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.scroll-icon {
+  position: absolute;
+  bottom: 2em;
+  height: 10vh;
+  text-align: center;
+}
+
+.scroll-icon svg {
+  height: 100%;
+  width: auto;
+  fill: var(--color-white);
+  opacity: .15;
+}
+
+/* about */
+
+.about-section {
+
+}
+
+/* projects */
+
+.projects-section {
+
+}
+
+.project-card {
+  padding: 1em;
+}
+
+.project-card .project-logo {
+  height: 100px;
+  display: flex;
+}
+
+.project-card .project-logo img {
+  height: auto;
+  width: 50%;
+  margin: auto;
+}
+
+.project-card .project-logo.square img {
+  height: 80%;
+  width: auto;
+  margin: auto;
+}
+
+.project-card h3 {
+  font-weight: 600;
+  margin: 1.5em 0 0 0;
+}
+
+.project-card h3 small {
+  font-weight: 400;
+}
+
+.project-card p {
+  margin: .8em 0;
+}
+
+.project-card a {
+  color: var(--color-black);
+}
+
+
+/* hobbies */
+
+.hobbies-section {
+
+}
+
+/* contact */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-black);
+  padding: 4em 0;
+}
+
+.contact-section .footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section .footer-menu .footer-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+
+.contact-section a {
+  color: var(--color-white);
+}
+
+/* responsive */
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+@media (min-width: 48em){
+  .desktop {
+  display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
