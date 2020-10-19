@@ -7,8 +7,8 @@ body {
 
   font-family: 'Asap', sans-serif;
   letter-spacing: 0;
-  line-height: 1.15;
-  font-size: 14px;
+  line-height: 1.25;
+  font-size: 16px;
 }
 
 h2 {
@@ -41,6 +41,10 @@ h2.blue::after{
 p {
   font-weight: 400;
   font-size: 1em;
+}
+
+a {
+  color: var(--color-black);
 }
 
 .main {
@@ -80,7 +84,7 @@ p {
   bottom: .5em;
   right: 0;
   width: auto;
-  font-size: 1.15em;
+  /* font-size: 1.15em; */
 }
 
 .header-menu .pure-menu-link {
@@ -149,10 +153,6 @@ p {
 
 .project-card p {
   margin: .8em 0;
-}
-
-.project-card a {
-  color: var(--color-black);
 }
 
 
