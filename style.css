@@ -48,14 +48,14 @@ a {
   color: var(--color-black);
 }
 
-.main {
-
-}
-
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 2em 1em;
+}
+
+.pure-g [class*=pure-u] {
+  font-family: 'Asap', sans-serif;
 }
 
 /* header */
