@@ -26,6 +26,7 @@ h2::after {
   height: .4em;
   width: 2em;
   content: '';
+  background-color: var(--color-white);
 }
 
 h2.red::after{
@@ -110,17 +111,24 @@ a {
 }
 
 /* about */
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0 0 0;
+}
 
-.about-section {
+.social-links .social-links-item {
+  display: inline-block;
+  vertical-align: middle;
+}
 
+.social-links .social-links-item:not(:last-child):after {
+  content: "\2022";
+  font-size: 1em;
+  margin: 0 .25em;
 }
 
 /* projects */
-
-.projects-section {
-
-}
-
 .project-card {
   padding: 1em;
 }
@@ -137,7 +145,7 @@ a {
 }
 
 .project-card .project-logo.square img {
-  height: 80%;
+  height: 90%;
   width: auto;
   margin: auto;
 }
@@ -155,41 +163,20 @@ a {
   letter-spacing: 1px;
 }
 
+.project-card h3 small.blue {
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+
 .project-card p {
   margin: .8em 0;
 }
 
 
-/* hobbies */
-
-.hobbies-section {
-
-}
-
 /* contact */
 
 .contact-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: var(--color-black);
-  padding: 4em 0;
-}
-
-.contact-section .footer-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-section .footer-menu .footer-menu-item {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 1em;
-}
-
-.contact-section a {
   color: var(--color-white);
 }
 
