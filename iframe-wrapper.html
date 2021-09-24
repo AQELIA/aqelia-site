@@ -9,6 +9,7 @@
   <style>
     body, html {
       margin: 0;
+      height: 100%;
     }
     iframe {
       width: 100%;
@@ -18,10 +19,10 @@
   </style>
 </head>
 <body>
-
   <script type="text/javascript">
     var urlParams = new URLSearchParams(window.location.search);
 
+    //
     window.addEventListener('message', function (event) {
       parent.postMessage(event.data, '*');
     });
@@ -35,6 +36,5 @@
 
     document.body.appendChild(iframe);
   </script>
-
 </body>
 </html>
